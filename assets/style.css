@@ -1,0 +1,231 @@
+/* =========================================
+   RESET & BASE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+.container {
+    background: #0f172a;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1e293b;
+}
+
+.container-wide {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #ff0055;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px 16px;
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff0055;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+}
+
+input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: auto;
+    accent-color: #ff0055;
+}
+
+button {
+    padding: 14px;
+    background: #ff0055;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #cc0044;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 0, 85, 0.4);
+}
+
+/* =========================================
+   ALERT
+   ========================================= */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.alert-error {
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    border: 1px solid #ef4444;
+}
+
+.alert-success {
+    background: rgba(34, 197, 94, 0.15);
+    color: #86efac;
+    border: 1px solid #22c55e;
+}
+
+/* =========================================
+   LINKS & TEXT
+   ========================================= */
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #ff0055;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   DASHBOARD
+   ========================================= */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.header-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit,
+.btn-logout {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.btn-edit {
+    background: #3b82f6;
+}
+
+.btn-edit:hover {
+    background: #2563eb;
+    text-decoration: none;
+}
+
+.btn-logout {
+    background: #ef4444;
+}
+
+.btn-logout:hover {
+    background: #dc2626;
+    text-decoration: none;
+}
+
+.info-box {
+    background: #1e293b;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #ff0055;
+}
+
+.info-box p {
+    text-align: left;
+    margin: 8px 0;
+    color: #e0e0e0;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-style: italic;
+}
